@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="logo-coffee.png">
+    <title>Coffee Center</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid textura-amadeirada">
+            <a class="navbar-brand" href="#"><img src="logo-coffee.png" id="logo-coffee" alt="">Coffee Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#s1">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Estabelecimento</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Sobre Nós
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#exampleModal" data-bs-toggle="modal">Localização</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#" href="#Modal2" data-bs-toggle="modal2">Horário de
+                                    Funcionamento</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Deixe sua Avaliação aqui!</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal LOCALIZAÇÃO -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Localização</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Rua das Palmeiras, 1020 – Centro, Cidade dos Cafés.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal INFORMAÇÕES DE CONTATO -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Horário de Funcionamento</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Segunda a Sexta: 6h30 às 21h00
+                    Sábados: 8h00 às 19h00
+                    Domingos e feriados: 9h00 às 16h00
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION - Carrossel-->
+    <div id="carouselExampleAutoplaying s1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://perfectdailygrind.com/pt/wp-content/uploads/sites/5/2021/07/Unsplash-1-2.jpeg"
+                    class="d-block w-100 img-carrossel" alt="café1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.esbrasil.com.br/wp-content/uploads/2024/03/IMG_8907.jpg"
+                    class="d-block w-100 img-carrossel" alt="a..">
+            </div>
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/fotos-premium/taza-cafe-esta-mesa-cafeteria_1128479-1045.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="d-block w-100 img-carrossel" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br><br>
+
+    <!-- Cards em GRID-->
+    <div class="container text-center" style="max-width: 1000px; margin: 0 auto;">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.assai.com.br/sites/default/files/xicara_transparente_com_cafe_americano_quente_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Café Americano</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.assai.com.br/sites/default/files/cafe_latte_com_arte_em_uma_xicara_amarela_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Café Latte</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.assai.com.br/sites/default/files/cafe_mocha_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Café Mocha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary cor-botão1" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Visualizar mais
+        opções</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cardápio Completo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- 1 - Café Mocha -->
+            <p><img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_mocha_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt=""></p>
+            <h3>Café Mocha</h3>
+            <p>Perfeito para quem ama chocolate, o mocha combina café expresso, leite vaporizado e calda de chocolate,
+                finalizado com chantilly. Tem sabor marcante e doce, sendo ótimo para acompanhar sobremesas.</p> <br>
+
+            <!-- 4 - Café Americano -->
+            <p><img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/xicara_transparente_com_cafe_americano_quente_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt=""></p>
+
+            <h3>Café Americano</h3>
+            <p>Feito a partir do café expresso diluído em água quente, o americano tem sabor suave e menos encorpado,
+                ideal para quem prefere bebidas leves. Pode ser servido quente ou gelado (“iced americano”) e combina
+                bem com biscoitos e doces leves.</p> <br>
+
+            <!-- 4 - Café Latte -->
+            <p><img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_latte_com_arte_em_uma_xicara_amarela_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt=""></p>
+
+            <h3>Café Latte</h3>
+            <p>O latte mistura café expresso com leite vaporizado, resultando em uma bebida cremosa e delicada. Pode ser
+                saborizado com caldas como caramelo ou chocolate e costuma ter desenhos decorativos na espuma — a famosa
+                “latte art”.</p> <br>
+
+            <!-- 4 - Café Cortado -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_cortado_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Cortado</h3>
+            <p>Com origem espanhola, o cortado leva café expresso e um pouco de leite vaporizado apenas para “cortar” a
+                acidez. O resultado é uma bebida intensa, mas equilibrada, com textura mais leve que outras opções.</p>
+            <br>
+
+            <!-- 5 - Café Macchiato -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_expresso_macchiato_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Macchiato</h3>
+            <p>“Macchiato” significa “manchado” em italiano, e descreve bem essa bebida: um expresso com um toque de
+                leite e espuma por cima. É simples, saboroso e bastante popular em cafeterias.</p>
+            <br>
+
+            <!-- 6 - Café Frappé -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_frappe_de_chocolate_em_varios_copos_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Frappé</h3>
+            <p>Refrescante e cremoso, o frappé mistura café, leite, gelo, açúcar e coberturas como chantilly e caldas
+                doces. É uma das opções preferidas de quem gosta de bebidas geladas e adocicadas.</p>
+            <br>
+
+            <!-- 7 - Café Dalgona -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_dalgona_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Dalgona</h3>
+            <p>Popularizado nas redes sociais, o dalgona leva café solúvel batido com água e açúcar até formar um creme
+                leve, servido sobre leite quente ou gelado. Além de bonito, tem sabor marcante e textura cremosa.</p>
+            <br>
+
+            <!-- 8 - Café com Panna -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_com_panna_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café com Panna</h3>
+            <p>Inspirado em sobremesas italianas, o café com panna leva uma dose de expresso coberta por chantilly
+                fresco ou creme batido. É uma combinação deliciosa entre o sabor forte do café e a doçura suave do
+                creme.</p>
+            <br>
+
+            <!-- 9 - Café Pingado -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_pingado_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Pingado</h3>
+            <p>Clássico brasileiro, o pingado é um café forte com um “pingo” de leite. Simples e tradicional, é perfeito
+                para acompanhar pães e bolos, especialmente no café da manhã ou da tarde.</p>
+            <br>
+
+            <!-- 10 - Café Mead Raf -->
+            <p>
+                <img id="offcanvas-image"
+                    src="https://www.assai.com.br/sites/default/files/cafe_raf_com_lavanda_-_tipos_de_cafe_-_assai_atacadista.jpg"
+                    alt="">
+            </p>
+            <h3>Café Mead Raf</h3>
+            <p>Originário da Rússia, o mead raf mistura expresso com creme e açúcar de baunilha, podendo levar aromas
+                como lavanda ou pistache. Tem sabor doce, delicado e textura cremosa — uma opção sofisticada e
+                diferente.</p>
+            <br>
+        </div>
+    </div>
+    <br><br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

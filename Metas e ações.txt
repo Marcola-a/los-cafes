@@ -1,0 +1,4 @@
+Linkar o outro modal no menu
+Ajustar a fonte de todos os textos
+Adicionar ao menos mais uma seção
+Ajustar sistema de Grid (com d-flex)
